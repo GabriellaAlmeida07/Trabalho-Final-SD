@@ -1,0 +1,240 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/mips
+Ealu
+Z0 w1732803379
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z5 dC:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM
+Z6 8C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/alu.vhd
+Z7 FC:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/alu.vhd
+l0
+L5
+VADEVmUfXmLP93@Xo`e:>J2
+!s100 m=N]Jm6l3e:^=3<l^Fg^S0
+Z8 OV;C;10.5b;63
+32
+Z9 !s110 1732803891
+!i10b 1
+Z10 !s108 1732803891.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/alu.vhd|
+Z12 !s107 C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/alu.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Abehave
+R1
+R2
+R3
+R4
+Z15 DEx4 work 3 alu 0 22 ADEVmUfXmLP93@Xo`e:>J2
+l21
+L16
+Z16 V4A6O[S9oM3`:IJL0e^RE_1
+Z17 !s100 C4ZP=0GU7GG8G`FIL0FkU1
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Ecmp_8bit
+Z18 w1732799500
+Z19 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R3
+R4
+R5
+Z20 8C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/cmp_8bit.vhd
+Z21 FC:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/cmp_8bit.vhd
+l0
+L6
+VdmJE1WkLlCcfZ>1e^mlJX1
+!s100 VZg3EDU7O^SD;cLc8EUNk1
+R8
+32
+R9
+!i10b 1
+R10
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/cmp_8bit.vhd|
+Z23 !s107 C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/cmp_8bit.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R19
+R3
+R4
+DEx4 work 8 cmp_8bit 0 22 dmJE1WkLlCcfZ>1e^mlJX1
+l17
+L16
+VaCaBcbkZ5VgXL<S=<c1b>1
+!s100 ^:m`SRZl7TfNUf4RC86@H2
+R8
+32
+R9
+!i10b 1
+R10
+R22
+R23
+!i113 1
+R13
+R14
+Ecpu
+Z24 w1732797508
+R19
+R3
+R4
+R5
+8C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/cpu.vhd
+FC:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/cpu.vhd
+l0
+L6
+VF`>T2gc68JOK<[?^h5bMm1
+!s100 GM7NG=iMJ^OUY[6:8D^HR1
+R8
+32
+!s110 1732798513
+!i10b 1
+!s108 1732798513.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/cpu.vhd|
+!s107 C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/cpu.vhd|
+!i113 1
+R13
+R14
+Emain_dec
+Z25 w1732803771
+R19
+R3
+R4
+R5
+Z26 8C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd
+Z27 FC:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd
+l0
+L5
+VV3?kHYkM:zK[PM`Sn]zf=2
+!s100 AJhP^DTG4gFCfVR57fAie2
+R8
+32
+R9
+!i10b 1
+R10
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd|
+Z29 !s107 C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd|
+!i113 1
+R13
+R14
+Abehave
+R19
+R3
+R4
+DEx4 work 8 main_dec 0 22 V3?kHYkM:zK[PM`Sn]zf=2
+l52
+L15
+VFkahd]XDUccU<`P1m]Nb?0
+!s100 FjZfWo=>UzGT4YCflk[X_3
+R8
+32
+R9
+!i10b 1
+R10
+R28
+R29
+!i113 1
+R13
+R14
+Ememoriaram
+Z30 w1732655326
+R3
+Z31 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 20
+Z32 dC:/Users/kelvi/Desktop/MemoriaRAM
+Z33 8C:/Users/kelvi/Desktop/MemoriaRAM/MemoriaRAM.vhd
+Z34 FC:/Users/kelvi/Desktop/MemoriaRAM/MemoriaRAM.vhd
+l0
+L4 1
+V=K;Qa?[O_LZzX3SnXDBHT2
+!s100 WaY0z<ZN1d`KMe0bAh@NI2
+Z35 OV;C;2020.1;71
+32
+Z36 !s110 1732753947
+!i10b 1
+Z37 !s108 1732753947.000000
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/kelvi/Desktop/MemoriaRAM/MemoriaRAM.vhd|
+Z39 !s107 C:/Users/kelvi/Desktop/MemoriaRAM/MemoriaRAM.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R3
+R31
+DEx4 work 10 memoriaram 0 22 =K;Qa?[O_LZzX3SnXDBHT2
+!i122 20
+l36
+L15 49
+V?]V4PN_0@QhoLh]M=NLVP3
+!s100 N`U;L2c1ZH6eQ@R`D:LT^1
+R35
+32
+R36
+!i10b 1
+R37
+R38
+R39
+!i113 1
+R13
+R14
+Eram256x8
+R24
+Z40 DPx9 altera_mf 20 altera_mf_components 0 22 @6M>I48X_jBQDo@?W=TN93
+R3
+R4
+R5
+Z41 8C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/ram256x8.vhd
+Z42 FC:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/ram256x8.vhd
+l0
+L43
+V]D8F2dijS18iM6Rf4M?0?1
+!s100 XU2DiMF1[:N^GFhcX?:c]0
+R8
+32
+R9
+!i10b 1
+R10
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/ram256x8.vhd|
+Z44 !s107 C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/ram256x8.vhd|
+!i113 1
+R13
+R14
+Asyn
+R40
+R3
+R4
+DEx4 work 8 ram256x8 0 22 ]D8F2dijS18iM6Rf4M?0?1
+l59
+L55
+VCb3aFz5G?B:?5IdjkJ=T_1
+!s100 0KIm]68XeR>b2AROLE]J<0
+R8
+32
+R9
+!i10b 1
+R10
+R43
+R44
+!i113 1
+R13
+R14

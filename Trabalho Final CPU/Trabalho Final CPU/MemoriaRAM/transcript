@@ -1,0 +1,389 @@
+# Compile of main_dec.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of ram256x8.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of cpu.vhd failed with 2 errors.
+# 5 compiles, 1 failed with 2 errors.
+vsim -gui work.main_dec
+# vsim -gui work.main_dec 
+# Start time: 09:55:42 on Nov 28,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_dec(behave)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.alu(behave)
+# ** Warning: (vsim-3473) Component instance "mem_ram1 : mem_ram" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /main_dec File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd
+# Loading work.cmp_8bit(behavioral)
+add wave -position insertpoint sim:/numeric_std/*
+# (vish-4014) No objects found matching '/numeric_std/*'.
+add wave -position insertpoint sim:/numeric_std/*
+# (vish-4014) No objects found matching '/numeric_std/*'.
+vsim -gui work.main_dec
+# End time: 09:57:12 on Nov 28,2024, Elapsed time: 0:01:30
+# Errors: 2, Warnings: 1
+# vsim -gui work.main_dec 
+# Start time: 09:57:12 on Nov 28,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_dec(behave)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.alu(behave)
+# ** Warning: (vsim-3473) Component instance "mem_ram1 : mem_ram" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /main_dec File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd
+# Loading work.cmp_8bit(behavioral)
+add wave -position end  sim:/main_dec/instrucao
+add wave -position end  sim:/main_dec/reg_A
+add wave -position end  sim:/main_dec/reg_A
+add wave -position end  sim:/main_dec/reg_B
+add wave -position end  sim:/main_dec/reg_IR
+add wave -position end  sim:/main_dec/reg_PC
+add wave -position end  sim:/main_dec/zero
+add wave -position end  sim:/main_dec/sign
+add wave -position end  sim:/main_dec/clk
+add wave -position end  sim:/main_dec/adress_signal
+add wave -position end  sim:/main_dec/data_signal
+add wave -position end  sim:/main_dec/read_sig
+add wave -position end  sim:/main_dec/write_sig
+add wave -position end  sim:/main_dec/enable_signal
+force -freeze sim:/main_dec/clk 1 0, 0 {50 ps} -r 100
+noforce sim:/main_dec/zero
+noforce sim:/main_dec/sign
+force -freeze sim:/main_dec/write_sig 0 0
+force -freeze sim:/main_dec/read_sig 0 0
+force -freeze sim:/main_dec/write_sig 1 0
+force -freeze sim:/main_dec/reg_A 10101010 0
+force -freeze sim:/main_dec/reg_A 10101010 0
+force -freeze sim:/main_dec/reg_B 00000000 0
+force -freeze sim:/main_dec/instrucao 00110100 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /main_dec/alu1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /main_dec/alu1
+run
+run
+run
+run
+run
+run
+noforce sim:/main_dec/zero
+run
+run
+run
+force -freeze sim:/main_dec/reg_A 00000000 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of main_dec.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of ram256x8.vhd was successful.
+# Compile of alu.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# Loading work.main_dec(behave)
+# Loading work.alu(behave)
+# ** Warning: (vsim-3473) Component instance "mem_ram1 : mem_ram" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /main_dec File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd
+# Loading work.cmp_8bit(behavioral)
+force -freeze sim:/main_dec/instrucao 00110100 0
+force -freeze sim:/main_dec/reg_A 11111111 0
+force -freeze sim:/main_dec/reg_B 00000000 0
+run
+# GetModuleFileName: Não foi possível encontrar o módulo especificado.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /main_dec/alu1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /main_dec/alu1
+run
+run
+run
+run
+run
+# Compile of main_dec.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of ram256x8.vhd was successful.
+# Compile of alu.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# Loading work.main_dec(behave)
+# Loading work.alu(behave)
+# ** Warning: (vsim-3473) Component instance "mem_ram1 : mem_ram" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /main_dec File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd
+# Loading work.cmp_8bit(behavioral)
+force -freeze sim:/main_dec/instrucao 00110000 0
+force -freeze sim:/main_dec/reg_A 01010101 0
+run
+# GetModuleFileName: Não foi possível encontrar o módulo especificado.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /main_dec/alu1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /main_dec/alu1
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/main_dec/reg_B 11111111 0
+force -freeze sim:/main_dec/instrucao 00110100 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 800 ps  Iteration: 1  Instance: /main_dec/alu1
+run
+run
+run
+run
+run
+# Compile of main_dec.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of ram256x8.vhd was successful.
+# Compile of alu.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# Loading work.main_dec(behave)
+# Loading work.alu(behave)
+# ** Warning: (vsim-3473) Component instance "mem_ram1 : mem_ram" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /main_dec File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd
+# Loading work.cmp_8bit(behavioral)
+add wave -position end  sim:/main_dec/zero_int
+add wave -position end  sim:/main_dec/sign_int
+force -freeze sim:/main_dec/instrucao 00110100 0
+force -freeze sim:/main_dec/reg_A 00000000 0
+force -freeze sim:/main_dec/reg_B 11111111 0
+run
+# GetModuleFileName: Não foi possível encontrar o módulo especificado.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /main_dec/alu1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /main_dec/alu1
+run
+run
+run
+run
+force -freeze sim:/main_dec/instrucao 00110000 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 500 ps  Iteration: 1  Instance: /main_dec/alu1
+run
+run
+run
+run
+run
+# Compile of main_dec.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of ram256x8.vhd was successful.
+# Compile of alu.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# Loading work.main_dec(behave)
+# Loading work.alu(behave)
+# ** Warning: (vsim-3473) Component instance "mem_ram1 : mem_ram" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /main_dec File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd
+# Loading work.cmp_8bit(behavioral)
+force -freeze sim:/main_dec/instrucao 00110000 0
+force -freeze sim:/main_dec/reg_A 10101010 0
+run
+# GetModuleFileName: Não foi possível encontrar o módulo especificado.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /main_dec/alu1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /main_dec/alu1
+run
+run
+run
+force -freeze sim:/main_dec/reg_B 11111111 0
+force -freeze sim:/main_dec/instrucao 00110100 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 400 ps  Iteration: 1  Instance: /main_dec/alu1
+run
+run
+force -freeze sim:/main_dec/instrucao 00110001 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 700 ps  Iteration: 1  Instance: /main_dec/alu1
+run
+run
+restart -f
+# ** Warning: (vsim-3473) Component instance "mem_ram1 : mem_ram" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /main_dec File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd
+# Compile of main_dec.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of ram256x8.vhd was successful.
+# Compile of alu.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+# Load canceled
+restart -f
+# Loading work.main_dec(behave)
+# Loading work.alu(behave)
+# ** Warning: (vsim-3473) Component instance "mem_ram1 : mem_ram" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /main_dec File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd
+# Loading work.cmp_8bit(behavioral)
+# Compile of main_dec.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of ram256x8.vhd was successful.
+# Compile of alu.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# Loading work.main_dec(behave)
+# Loading work.alu(behave)
+# ** Warning: (vsim-3473) Component instance "mem_ram1 : mem_ram" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /main_dec File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd
+# Loading work.cmp_8bit(behavioral)
+force -freeze sim:/main_dec/reg_A 10101010 0
+force -freeze sim:/main_dec/instrucao 01110100 0
+run
+# GetModuleFileName: Não foi possível encontrar o módulo especificado.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /main_dec/alu1
+run
+run
+run
+run
+run
+force -freeze sim:/main_dec/reg_B 11111111 0
+force -freeze sim:/main_dec/instrucao 01111100 0
+run
+run
+# Compile of main_dec.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of ram256x8.vhd was successful.
+# Compile of alu.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# Loading work.main_dec(behave)
+# Loading work.alu(behave)
+# ** Warning: (vsim-3473) Component instance "mem_ram1 : mem_ram" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /main_dec File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd
+# Loading work.cmp_8bit(behavioral)
+force -freeze sim:/main_dec/instrucao 00110000 0
+force -freeze sim:/main_dec/reg_A 11111111 0
+run
+# GetModuleFileName: Não foi possível encontrar o módulo especificado.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /main_dec/alu1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /main_dec/alu1
+run
+run
+run
+force -freeze sim:/main_dec/instrucao 10011111 0
+run
+run
+run
+run
+force -freeze sim:/main_dec/reg_B 00000000 0
+force -freeze sim:/main_dec/instrucao 00110100 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 800 ps  Iteration: 1  Instance: /main_dec/alu1
+run
+force -freeze sim:/main_dec/instrucao 10100000 0
+run
+run
+run
+force -freeze sim:/main_dec/instrucao 10011010 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of main_dec.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of ram256x8.vhd was successful.
+# Compile of alu.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+# Compile of main_dec.vhd failed with 15 errors.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of ram256x8.vhd was successful.
+# Compile of alu.vhd failed with 3 errors.
+# 4 compiles, 2 failed with 18 errors.
+# Compile of main_dec.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of ram256x8.vhd was successful.
+# Compile of alu.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.main_dec
+# End time: 11:25:11 on Nov 28,2024, Elapsed time: 1:27:59
+# Errors: 1, Warnings: 27
+# vsim -gui work.main_dec 
+# Start time: 11:25:11 on Nov 28,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_dec(behave)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.alu(behave)
+# ** Warning: (vsim-3473) Component instance "mem_ram1 : mem_ram" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /main_dec File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd
+# Loading work.cmp_8bit(behavioral)
+add wave -position insertpoint sim:/main_dec/*
+force -freeze sim:/main_dec/instrucao 00110100 0
+force -freeze sim:/main_dec/reg_A 11111111 0
+force -freeze sim:/main_dec/reg_B 00000000 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /main_dec/alu1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /main_dec/alu1
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/main_dec/reg_A 00000010 0
+force -freeze sim:/main_dec/instrucao 00000000 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 11:32:40 on Nov 28,2024, Elapsed time: 0:07:29
+# Errors: 0, Warnings: 3

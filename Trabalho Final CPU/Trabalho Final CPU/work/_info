@@ -1,0 +1,215 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/15528121/Downloads/dando certo-20241119T181608Z-001/dando certo
+Ealu
+Z0 w1733146694
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z5 dC:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001
+Z6 8C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/alu.vhd
+Z7 FC:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/alu.vhd
+l0
+L5
+VADEVmUfXmLP93@Xo`e:>J2
+!s100 m=N]Jm6l3e:^=3<l^Fg^S0
+Z8 OV;C;10.5b;63
+32
+Z9 !s110 1733152182
+!i10b 1
+Z10 !s108 1733152182.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/alu.vhd|
+Z12 !s107 C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/alu.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Abehave
+R1
+R2
+R3
+R4
+DEx4 work 3 alu 0 22 ADEVmUfXmLP93@Xo`e:>J2
+l21
+L16
+V4A6O[S9oM3`:IJL0e^RE_1
+!s100 C4ZP=0GU7GG8G`FIL0FkU1
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Ecmp_8bit
+R0
+Z15 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R3
+R4
+R5
+Z16 8C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/cmp_8bit.vhd
+Z17 FC:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/cmp_8bit.vhd
+l0
+L6
+VdmJE1WkLlCcfZ>1e^mlJX1
+!s100 VZg3EDU7O^SD;cLc8EUNk1
+R8
+32
+R9
+!i10b 1
+R10
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/cmp_8bit.vhd|
+Z19 !s107 C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/cmp_8bit.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R15
+R3
+R4
+DEx4 work 8 cmp_8bit 0 22 dmJE1WkLlCcfZ>1e^mlJX1
+l17
+L16
+VaCaBcbkZ5VgXL<S=<c1b>1
+!s100 ^:m`SRZl7TfNUf4RC86@H2
+R8
+32
+R9
+!i10b 1
+R10
+R18
+R19
+!i113 1
+R13
+R14
+Ecpu
+Z20 w1733152178
+R15
+R3
+R4
+R5
+Z21 8C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/cpu.vhd
+Z22 FC:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/cpu.vhd
+l0
+L6
+VF`>T2gc68JOK<[?^h5bMm1
+!s100 GM7NG=iMJ^OUY[6:8D^HR1
+R8
+32
+Z23 !s110 1733152183
+!i10b 1
+Z24 !s108 1733152183.000000
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/cpu.vhd|
+Z26 !s107 C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/cpu.vhd|
+!i113 1
+R13
+R14
+Abehave
+R15
+R3
+R4
+DEx4 work 3 cpu 0 22 F`>T2gc68JOK<[?^h5bMm1
+l45
+L13
+VUMG6z1@J45ACeU3R_NHAD2
+!s100 _;Q4X6_0Q0RT742P69[QV3
+R8
+32
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R13
+R14
+Emain_dec
+Z27 w1733151288
+R15
+R3
+R4
+R5
+Z28 8C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/main_dec.vhd
+Z29 FC:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/main_dec.vhd
+l0
+L5
+Vk@V_gjE4HLTBOfRiUD53]2
+!s100 nBfB0j>l_WUHe`YK>n6PY1
+R8
+32
+R23
+!i10b 1
+R24
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/main_dec.vhd|
+Z31 !s107 C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/main_dec.vhd|
+!i113 1
+R13
+R14
+Abehave
+R15
+R3
+R4
+Z32 DEx4 work 8 main_dec 0 22 k@V_gjE4HLTBOfRiUD53]2
+l52
+L15
+Z33 VS`gmF1JGn1LO4Z3Vjc73J1
+Z34 !s100 K=ZkeQolg9Vi@aOWNZc>02
+R8
+32
+R23
+!i10b 1
+R24
+R30
+R31
+!i113 1
+R13
+R14
+Ememoriaram
+Z35 w1733146695
+R3
+R4
+R5
+Z36 8C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/MemoriaRAM.vhd
+Z37 FC:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/MemoriaRAM.vhd
+l0
+L4
+V=K;Qa?[O_LZzX3SnXDBHT2
+!s100 WaY0z<ZN1d`KMe0bAh@NI2
+R8
+32
+R9
+!i10b 1
+R10
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/MemoriaRAM.vhd|
+Z39 !s107 C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/MemoriaRAM.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R3
+R4
+DEx4 work 10 memoriaram 0 22 =K;Qa?[O_LZzX3SnXDBHT2
+l36
+L15
+V?]V4PN_0@QhoLh]M=NLVP3
+!s100 N`U;L2c1ZH6eQ@R`D:LT^1
+R8
+32
+R9
+!i10b 1
+R10
+R38
+R39
+!i113 1
+R13
+R14

@@ -1,0 +1,49 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;    -- Para operações com STD_LOGIC_VECTOR
+use IEEE.NUMERIC_STD.ALL;       -- Para operações com unsigned e signed
+
+
+ENTITY cpu is 
+	PORT(clk, reset: IN STD_LOGIC;
+			sw: 		  IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+			LED:       OUT STD_LOGIC_VECTOR (7 DOWNTO 0));
+			
+END;
+
+ARCHITECTURE BEHAVE OF cpu is
+
+	type ram_type is array (0 to 255) of STD_LOGIC_VECTOR(7 downto 0);
+	
+	signal mem : ram_type;
+	
+	COMPONENT main_dec
+        PORT (
+            instrucao :               				IN STD_LOGIC_VECTOR (7 DOWNTO 0);
+				reg_A,reg_B, reg_R, reg_PC, reg_IR:	BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0);
+				zero, sign:									BUFFER STD_LOGIC);	
+	
+	END COMPONENT;
+	
+	SIGNAL instrucao, reg_A, reg_B, reg_R, reg_PC, reg_IR : STD_LOGIC_VECTOR(7 DOWNTO 0) := "00000000";
+	SIGNAL zero, sign : STD_LOGIC;
+	
+	BEGIN
+	
+	dec: main_dec PORT MAP  (instrucao, reg_A, reg_B, reg_R, open, reg_IR, zero, sign); 
+	
+	process(clk, reset)
+	begin
+		if reset='1' then
+			mem(0)<="00000011";
+			mem(1)<="11111111";
+			mem(2)<="00000001";
+			mem(3)<="00010001";
+			reg_PC<="00000000";
+		elsif rising_edge(clk) then
+			instrucao <= mem(to_integer(unsigned(reg_PC)));
+			
+			reg_PC <= std_logic_vector(unsigned(reg_PC) + 1);
+	   END IF;
+	end process;
+	LED<=instrucao;
+END;

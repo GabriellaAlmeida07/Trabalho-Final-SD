@@ -1,0 +1,478 @@
+Analysis & Synthesis report for MemoriaRAM
+Thu Nov 28 11:23:00 2024
+Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2021  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Failed - Thu Nov 28 11:23:00 2024           ;
+; Quartus Prime Version       ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
+; Revision Name               ; MemoriaRAM                                  ;
+; Top-level Entity Name       ; cpu                                         ;
+; Family                      ; Cyclone V                                   ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
+; Total registers             ; N/A until Partition Merge                   ;
+; Total pins                  ; N/A until Partition Merge                   ;
+; Total virtual pins          ; N/A until Partition Merge                   ;
+; Total block memory bits     ; N/A until Partition Merge                   ;
+; Total PLLs                  ; N/A until Partition Merge                   ;
+; Total DLLs                  ; N/A until Partition Merge                   ;
++-----------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CEBA4F23C7        ;                    ;
+; Top-level entity name                                                           ; cpu                ; MemoriaRAM         ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+    Info: Processing started: Thu Nov 28 11:22:52 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MemoriaRAM -c MemoriaRAM
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file ram256x8.vhd
+    Info (12022): Found design unit 1: ram256x8-SYN File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/ram256x8.vhd Line: 55
+    Info (12023): Found entity 1: ram256x8 File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/ram256x8.vhd Line: 43
+Info (12021): Found 2 design units, including 1 entities, in source file memoriaram.vhd
+    Info (12022): Found design unit 1: MemoriaRAM-behavior File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/MemoriaRAM.vhd Line: 15
+    Info (12023): Found entity 1: MemoriaRAM File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/MemoriaRAM.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file cmp_8bit.vhd
+    Info (12022): Found design unit 1: cmp_8bit-Behavioral File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/cmp_8bit.vhd Line: 16
+    Info (12023): Found entity 1: cmp_8bit File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/cmp_8bit.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file cpu.vhd
+    Info (12022): Found design unit 1: cpu-BEHAVE File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/cpu.vhd Line: 13
+    Info (12023): Found entity 1: cpu File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/cpu.vhd Line: 6
+Info (12127): Elaborating entity "cpu" for the top level hierarchy
+Warning (10540): VHDL Signal Declaration warning at cpu.vhd(39): used explicit default value for signal "instrucao" because signal was never assigned a value File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/cpu.vhd Line: 39
+Warning (10036): Verilog HDL or VHDL warning at cpu.vhd(39): object "reg_B" assigned a value but never read File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/cpu.vhd Line: 39
+Warning (10036): Verilog HDL or VHDL warning at cpu.vhd(39): object "reg_R" assigned a value but never read File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/cpu.vhd Line: 39
+Warning (10036): Verilog HDL or VHDL warning at cpu.vhd(39): object "reg_IR" assigned a value but never read File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/cpu.vhd Line: 39
+Warning (10541): VHDL Signal Declaration warning at cpu.vhd(40): used implicit default value for signal "zero" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/cpu.vhd Line: 40
+Warning (10036): Verilog HDL or VHDL warning at cpu.vhd(40): object "sign" assigned a value but never read File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/cpu.vhd Line: 40
+Warning (10492): VHDL Process Statement warning at cpu.vhd(59): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/cpu.vhd Line: 59
+Warning (12125): Using design file main_dec.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: main_dec-BEHAVE File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 15
+    Info (12023): Found entity 1: main_dec File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 5
+Info (12128): Elaborating entity "main_dec" for hierarchy "main_dec:dec" File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/cpu.vhd Line: 44
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(74): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 74
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(75): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 75
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(77): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 77
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(78): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 78
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(80): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 80
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(81): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 81
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(83): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 83
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(84): signal "reg_IR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 84
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(86): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 86
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(87): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 87
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(89): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 89
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(90): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 90
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(92): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 92
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(93): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 93
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(95): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 95
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(96): signal "reg_IR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 96
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(98): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 98
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(99): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 99
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(101): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 101
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(102): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 102
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(104): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 104
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(105): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 105
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(107): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 107
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(108): signal "reg_IR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 108
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(120): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 120
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(121): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 121
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(123): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 123
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(124): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 124
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(126): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 126
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(127): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 127
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(129): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 129
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(130): signal "reg_IR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 130
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(132): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 132
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(133): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 133
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(135): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 135
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(136): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 136
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(138): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 138
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(139): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 139
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(141): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 141
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(142): signal "reg_IR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 142
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(144): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 144
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(145): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 145
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(147): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 147
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(148): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 148
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(150): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 150
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(151): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 151
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(153): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 153
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(154): signal "reg_IR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 154
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(166): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 166
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(167): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 167
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(169): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 169
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(170): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 170
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(172): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 172
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(173): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 173
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(175): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 175
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(176): signal "reg_IR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 176
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(178): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 178
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(179): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 179
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(181): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 181
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(182): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 182
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(184): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 184
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(185): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 185
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(187): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 187
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(188): signal "reg_IR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 188
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(190): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 190
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(191): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 191
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(193): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 193
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(194): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 194
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(196): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 196
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(197): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 197
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(199): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 199
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(200): signal "reg_IR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 200
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(215): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 215
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(216): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 216
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(219): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 219
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(220): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 220
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(223): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 223
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(224): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 224
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(227): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 227
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(228): signal "reg_IR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 228
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(231): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 231
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(232): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 232
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(235): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 235
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(236): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 236
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(239): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 239
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(240): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 240
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(243): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 243
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(244): signal "reg_IR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 244
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(247): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 247
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(248): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 248
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(251): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 251
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(252): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 252
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(255): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 255
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(256): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 256
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(259): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 259
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(260): signal "reg_IR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 260
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(272): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 272
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(273): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 273
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(275): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 275
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(276): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 276
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(278): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 278
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(279): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 279
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(281): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 281
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(282): signal "reg_IR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 282
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(284): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 284
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(285): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 285
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(287): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 287
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(288): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 288
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(290): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 290
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(291): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 291
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(293): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 293
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(294): signal "reg_IR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 294
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(296): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 296
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(297): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 297
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(299): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 299
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(300): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 300
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(302): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 302
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(303): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 303
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(305): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 305
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(306): signal "reg_IR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 306
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(320): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 320
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(322): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 322
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(324): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 324
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(326): signal "reg_IR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 326
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(337): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 337
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(339): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 339
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(341): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 341
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(343): signal "reg_IR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 343
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(357): signal "reg_PC" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 357
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(358): signal "data_signal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 358
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(361): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 361
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(362): signal "data_signal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 362
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(365): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 365
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(366): signal "data_signal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 366
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(369): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 369
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(370): signal "data_signal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 370
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(373): signal "reg_PC" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 373
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(374): signal "data_signal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 374
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(377): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 377
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(378): signal "data_signal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 378
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(399): signal "reg_PC" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 399
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(400): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 400
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(403): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 403
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(404): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 404
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(407): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 407
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(408): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 408
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(411): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 411
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(412): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 412
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(415): signal "reg_PC" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 415
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(416): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 416
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(419): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 419
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(420): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 420
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(436): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 436
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(439): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 439
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(442): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 442
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(445): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 445
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(448): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 448
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(451): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 451
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(454): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 454
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(457): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 457
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(460): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 460
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(463): signal "reg_IR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 463
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(466): signal "reg_IR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 466
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(469): signal "reg_IR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 469
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(484): signal "reg_A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 484
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(485): signal "reg_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 485
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(486): signal "reg_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 486
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(497): signal "zero_int" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 497
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(497): signal "sign_int" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 497
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(506): signal "zero_int" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 506
+Warning (10492): VHDL Process Statement warning at main_dec.vhd(506): signal "sign_int" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 506
+Warning (10631): VHDL Process Statement warning at main_dec.vhd(63): inferring latch(es) for signal or variable "ctrl", which holds its previous value in one or more paths through the process File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Warning (10631): VHDL Process Statement warning at main_dec.vhd(63): inferring latch(es) for signal or variable "reg_A_signal", which holds its previous value in one or more paths through the process File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Warning (10631): VHDL Process Statement warning at main_dec.vhd(63): inferring latch(es) for signal or variable "reg_B_signal", which holds its previous value in one or more paths through the process File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Warning (10631): VHDL Process Statement warning at main_dec.vhd(63): inferring latch(es) for signal or variable "enable_signal", which holds its previous value in one or more paths through the process File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Warning (10631): VHDL Process Statement warning at main_dec.vhd(63): inferring latch(es) for signal or variable "write_sig", which holds its previous value in one or more paths through the process File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Warning (10631): VHDL Process Statement warning at main_dec.vhd(63): inferring latch(es) for signal or variable "read_sig", which holds its previous value in one or more paths through the process File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Warning (10631): VHDL Process Statement warning at main_dec.vhd(63): inferring latch(es) for signal or variable "adress_signal", which holds its previous value in one or more paths through the process File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Warning (10631): VHDL Process Statement warning at main_dec.vhd(63): inferring latch(es) for signal or variable "reg_A", which holds its previous value in one or more paths through the process File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Warning (10631): VHDL Process Statement warning at main_dec.vhd(63): inferring latch(es) for signal or variable "reg_B", which holds its previous value in one or more paths through the process File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Warning (10631): VHDL Process Statement warning at main_dec.vhd(63): inferring latch(es) for signal or variable "reg_R", which holds its previous value in one or more paths through the process File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Warning (10631): VHDL Process Statement warning at main_dec.vhd(63): inferring latch(es) for signal or variable "data_signal", which holds its previous value in one or more paths through the process File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Warning (10631): VHDL Process Statement warning at main_dec.vhd(63): inferring latch(es) for signal or variable "reg_IR", which holds its previous value in one or more paths through the process File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Warning (10631): VHDL Process Statement warning at main_dec.vhd(63): inferring latch(es) for signal or variable "reg_PC", which holds its previous value in one or more paths through the process File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_PC[0]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_PC[1]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_PC[2]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_PC[3]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_PC[4]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_PC[5]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_PC[6]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_PC[7]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_IR[0]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_IR[1]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_IR[2]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_IR[3]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_IR[4]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_IR[5]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_IR[6]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_IR[7]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "data_signal[0]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "data_signal[1]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "data_signal[2]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "data_signal[3]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "data_signal[4]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "data_signal[5]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "data_signal[6]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "data_signal[7]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_R[0]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_R[1]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_R[2]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_R[3]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_R[4]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_R[5]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_R[6]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_R[7]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_B[0]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_B[1]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_B[2]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_B[3]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_B[4]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_B[5]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_B[6]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_B[7]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_A[0]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_A[1]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_A[2]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_A[3]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_A[4]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_A[5]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_A[6]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_A[7]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "adress_signal[0]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "adress_signal[1]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "adress_signal[2]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "adress_signal[3]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "adress_signal[4]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "adress_signal[5]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "adress_signal[6]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "adress_signal[7]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "read_sig" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "write_sig" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "enable_signal" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_B_signal[0]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_B_signal[1]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_B_signal[2]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_B_signal[3]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_B_signal[4]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_B_signal[5]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_B_signal[6]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_B_signal[7]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_A_signal[0]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_A_signal[1]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_A_signal[2]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_A_signal[3]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_A_signal[4]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_A_signal[5]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_A_signal[6]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "reg_A_signal[7]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "ctrl[0]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "ctrl[1]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Info (10041): Inferred latch for "ctrl[2]" at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Error (10028): Can't resolve multiple constant drivers for net "reg_R[7]" at main_dec.vhd(60) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 60
+Error (10029): Constant driver at main_dec.vhd(63) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 63
+Error (10028): Can't resolve multiple constant drivers for net "reg_R[6]" at main_dec.vhd(60) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 60
+Error (10028): Can't resolve multiple constant drivers for net "reg_R[5]" at main_dec.vhd(60) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 60
+Error (10028): Can't resolve multiple constant drivers for net "reg_R[4]" at main_dec.vhd(60) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 60
+Error (10028): Can't resolve multiple constant drivers for net "reg_R[3]" at main_dec.vhd(60) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 60
+Error (10028): Can't resolve multiple constant drivers for net "reg_R[2]" at main_dec.vhd(60) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 60
+Error (10028): Can't resolve multiple constant drivers for net "reg_R[1]" at main_dec.vhd(60) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 60
+Error (10028): Can't resolve multiple constant drivers for net "reg_R[0]" at main_dec.vhd(60) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 60
+Error (10028): Can't resolve multiple constant drivers for net "data_signal[7]" at main_dec.vhd(56) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 56
+Error (10028): Can't resolve multiple constant drivers for net "data_signal[6]" at main_dec.vhd(56) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 56
+Error (10028): Can't resolve multiple constant drivers for net "data_signal[5]" at main_dec.vhd(56) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 56
+Error (10028): Can't resolve multiple constant drivers for net "data_signal[4]" at main_dec.vhd(56) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 56
+Error (10028): Can't resolve multiple constant drivers for net "data_signal[3]" at main_dec.vhd(56) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 56
+Error (10028): Can't resolve multiple constant drivers for net "data_signal[2]" at main_dec.vhd(56) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 56
+Error (10028): Can't resolve multiple constant drivers for net "data_signal[1]" at main_dec.vhd(56) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 56
+Error (10028): Can't resolve multiple constant drivers for net "data_signal[0]" at main_dec.vhd(56) File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/main_dec.vhd Line: 56
+Error (12152): Can't elaborate user hierarchy "main_dec:dec" File: C:/Users/15528121/Downloads/MemoriaRAM-20241128T123813Z-001/MemoriaRAM/cpu.vhd Line: 44
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 18 errors, 193 warnings
+    Error: Peak virtual memory: 4853 megabytes
+    Error: Processing ended: Thu Nov 28 11:23:00 2024
+    Error: Elapsed time: 00:00:08
+    Error: Total CPU time (on all processors): 00:00:18
+
+

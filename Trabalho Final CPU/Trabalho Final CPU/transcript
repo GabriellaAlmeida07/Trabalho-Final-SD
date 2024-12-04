@@ -1,0 +1,478 @@
+# Compile of MemoriaRAM.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of main_dec.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.cpu
+# vsim -gui work.cpu 
+# Start time: 10:42:27 on Dec 02,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.cpu(behave)
+# Loading work.main_dec(behave)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.alu(behave)
+# ** Warning: (vsim-3473) Component instance "mem_ram1 : mem_ram" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/dec File: C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/main_dec.vhd
+# Loading work.cmp_8bit(behavioral)
+# Compile of MemoriaRAM.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of cpu.vhd failed with 6 errors.
+# Compile of main_dec.vhd was successful.
+# 5 compiles, 1 failed with 6 errors.
+# Compile of MemoriaRAM.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of cpu.vhd failed with 2 errors.
+# Compile of main_dec.vhd was successful.
+# 5 compiles, 1 failed with 2 errors.
+# Compile of MemoriaRAM.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of main_dec.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.cpu
+# End time: 11:00:26 on Dec 02,2024, Elapsed time: 0:17:59
+# Errors: 0, Warnings: 1
+# vsim -gui work.cpu 
+# Start time: 11:00:26 on Dec 02,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.cpu(behave)
+# Loading work.main_dec(behave)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.alu(behave)
+# ** Warning: (vsim-3473) Component instance "mem_ram1 : mem_ram" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/dec File: C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/main_dec.vhd
+# Loading work.cmp_8bit(behavioral)
+add wave -position insertpoint sim:/cpu/*
+force -freeze sim:/cpu/sw 10101010 0
+force -freeze sim:/cpu/instrucao 11010000 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/dec/alu1
+run
+run
+force -freeze sim:/cpu/clk 1 0, 0 {50 ps} -r 100
+run
+run
+run
+run
+run
+# Compile of MemoriaRAM.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of cpu.vhd failed with 3 errors.
+# Compile of main_dec.vhd was successful.
+# 5 compiles, 1 failed with 3 errors.
+# Compile of MemoriaRAM.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of main_dec.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.cpu
+# End time: 11:04:52 on Dec 02,2024, Elapsed time: 0:04:26
+# Errors: 0, Warnings: 2
+# vsim -gui work.cpu 
+# Start time: 11:04:52 on Dec 02,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.cpu(behave)
+# Loading work.main_dec(behave)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.alu(behave)
+# ** Warning: (vsim-3473) Component instance "mem_ram1 : mem_ram" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/dec File: C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/main_dec.vhd
+# Loading work.cmp_8bit(behavioral)
+add wave -position insertpoint sim:/cpu/*
+force -freeze sim:/cpu/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/cpu/sw 01010101 0
+force -freeze sim:/cpu/instrucao 11010000 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/dec/alu1
+run
+run
+# Compile of MemoriaRAM.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of cpu.vhd failed with 2 errors.
+# Compile of main_dec.vhd was successful.
+# 5 compiles, 1 failed with 2 errors.
+# Compile of MemoriaRAM.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of cpu.vhd failed with 2 errors.
+# Compile of main_dec.vhd was successful.
+# 5 compiles, 1 failed with 2 errors.
+# Compile of MemoriaRAM.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of main_dec.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.cpu
+# End time: 11:13:29 on Dec 02,2024, Elapsed time: 0:08:37
+# Errors: 0, Warnings: 2
+# vsim -gui work.cpu 
+# Start time: 11:13:29 on Dec 02,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.cpu(behave)
+# Loading work.main_dec(behave)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.alu(behave)
+# ** Warning: (vsim-3473) Component instance "mem_ram1 : mem_ram" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/dec File: C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/main_dec.vhd
+# Loading work.cmp_8bit(behavioral)
+add wave -position insertpoint sim:/cpu/*
+force -freeze sim:/cpu/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/cpu/sw 01010101 0
+force -freeze sim:/cpu/instrucao 11010000 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/dec/alu1
+run
+run
+force -freeze sim:/cpu/instrucao 11100000 0
+run
+run
+# Compile of MemoriaRAM.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of main_dec.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+restart -f
+# Loading work.cpu(behave)
+# Loading work.main_dec(behave)
+# Loading work.alu(behave)
+# ** Warning: (vsim-3473) Component instance "mem_ram1 : mem_ram" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/dec File: C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/main_dec.vhd
+# Loading work.cmp_8bit(behavioral)
+force -freeze sim:/cpu/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/cpu/reset 0 0
+force -freeze sim:/cpu/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/cpu/instrucao 11010000 0
+force -freeze sim:/cpu/sw 01010101 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/dec/alu1
+run
+run
+run
+# Compile of MemoriaRAM.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of main_dec.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+restart -f
+# Loading work.cpu(behave)
+# Loading work.main_dec(behave)
+# Loading work.alu(behave)
+# ** Warning: (vsim-3473) Component instance "mem_ram1 : mem_ram" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/dec File: C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/main_dec.vhd
+# Loading work.cmp_8bit(behavioral)
+force -freeze sim:/cpu/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/cpu/sw 01010101 0
+force -freeze sim:/cpu/instrucao 11010000 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/dec/alu1
+run
+run
+noforce sim:/cpu/reg_A
+run
+run
+run
+run
+force -freeze sim:/cpu/reset 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of MemoriaRAM.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of cpu.vhd failed with 2 errors.
+# Compile of main_dec.vhd was successful.
+# 5 compiles, 1 failed with 2 errors.
+# Compile of MemoriaRAM.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of main_dec.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.cpu
+# End time: 11:38:45 on Dec 02,2024, Elapsed time: 0:25:16
+# Errors: 0, Warnings: 6
+# vsim -gui work.cpu 
+# Start time: 11:38:45 on Dec 02,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.cpu(behave)
+# Loading work.main_dec(behave)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.alu(behave)
+# ** Warning: (vsim-3473) Component instance "mem_ram1 : mem_ram" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/dec File: C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/main_dec.vhd
+# Loading work.cmp_8bit(behavioral)
+add wave -position insertpoint sim:/cpu/*
+force -freeze sim:/cpu/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/cpu/reset 0 0
+force -freeze sim:/cpu/sw 11111111 0
+force -freeze sim:/cpu/instrucao 11010000 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/dec/alu1
+run
+run
+force -freeze sim:/cpu/instrucao 11010100 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of MemoriaRAM.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of main_dec.vhd failed with 1 errors.
+# 5 compiles, 1 failed with 1 error.
+# Compile of MemoriaRAM.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of main_dec.vhd failed with 2 errors.
+# 5 compiles, 1 failed with 2 errors.
+# Compile of MemoriaRAM.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of main_dec.vhd failed with 2 errors.
+# 5 compiles, 1 failed with 2 errors.
+# Compile of MemoriaRAM.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of main_dec.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+restart -f
+# Loading work.cpu(behave)
+# Loading work.main_dec(behave)
+# Loading work.alu(behave)
+# ** Warning: (vsim-3473) Component instance "mem_ram1 : mem_ram" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/dec File: C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/main_dec.vhd
+# Loading work.cmp_8bit(behavioral)
+force -freeze sim:/cpu/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/cpu/sw 01010101 0
+force -freeze sim:/cpu/instrucao 11010000 0
+force -freeze sim:/cpu/reset 0 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/dec/alu1
+run
+run
+vsim -gui work.main_dec
+# End time: 11:52:01 on Dec 02,2024, Elapsed time: 0:13:16
+# Errors: 0, Warnings: 4
+# vsim -gui work.main_dec 
+# Start time: 11:52:01 on Dec 02,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.main_dec(behave)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.alu(behave)
+# ** Warning: (vsim-3473) Component instance "mem_ram1 : mem_ram" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /main_dec File: C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/main_dec.vhd
+# Loading work.cmp_8bit(behavioral)
+add wave -position insertpoint sim:/main_dec/*
+force -freeze sim:/main_dec/instrucao 11010000 0
+force -freeze sim:/main_dec/instrucao 11010000 0
+force -freeze sim:/main_dec/sw 11111111 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /main_dec/alu1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /main_dec/alu1
+run
+# Load canceled
+# Compile of MemoriaRAM.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of main_dec.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+restart -f
+# Loading work.main_dec(behave)
+# Loading work.alu(behave)
+# ** Warning: (vsim-3473) Component instance "mem_ram1 : mem_ram" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /main_dec File: C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/main_dec.vhd
+# Loading work.cmp_8bit(behavioral)
+force -freeze sim:/main_dec/instrucao 11010000 0
+force -freeze sim:/main_dec/sw 11110000 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /main_dec/alu1
+run
+run
+run
+force -freeze sim:/main_dec/instrucao 11100000 0
+run
+run
+run
+vsim -gui work.cpu
+# End time: 11:56:38 on Dec 02,2024, Elapsed time: 0:04:37
+# Errors: 1, Warnings: 5
+# vsim -gui work.cpu 
+# Start time: 11:56:38 on Dec 02,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.cpu(behave)
+# Loading work.main_dec(behave)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.alu(behave)
+# ** Warning: (vsim-3473) Component instance "mem_ram1 : mem_ram" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/dec File: C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/main_dec.vhd
+# Loading work.cmp_8bit(behavioral)
+add wave -position insertpoint sim:/cpu/*
+force -freeze sim:/cpu/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/cpu/sw 01010101 0
+force -freeze sim:/cpu/instrucao 11010000 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/dec/alu1
+run
+run
+force -freeze sim:/cpu/instrucao 11100000 0
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/cpu/reg_A 10101010 0
+run
+run
+run
+run
+run
+run
+# Compile of MemoriaRAM.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of main_dec.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+restart -f
+# Loading work.cpu(behave)
+# Loading work.main_dec(behave)
+# Loading work.alu(behave)
+# ** Warning: (vsim-3473) Component instance "mem_ram1 : mem_ram" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/dec File: C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/main_dec.vhd
+# Loading work.cmp_8bit(behavioral)
+# Warning in wave window restart: (vish-4014) No objects found matching '/cpu/sw_sig'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/cpu/led_sig'. 
+force -freeze sim:/cpu/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/cpu/sw 01010101 0
+force -freeze sim:/cpu/instrucao 11010000 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/dec/alu1
+run
+run
+run
+# Compile of MemoriaRAM.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of cpu.vhd failed with 2 errors.
+# Compile of main_dec.vhd was successful.
+# 5 compiles, 1 failed with 2 errors.
+run
+run
+force -freeze sim:/cpu/instrucao 11100000 0
+run
+run
+run
+run
+run
+run
+# Compile of MemoriaRAM.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of cpu.vhd failed with 2 errors.
+# Compile of main_dec.vhd was successful.
+# 5 compiles, 1 failed with 2 errors.
+# Compile of MemoriaRAM.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of cmp_8bit.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of main_dec.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+restart -f
+# Loading work.cpu(behave)
+# Loading work.main_dec(behave)
+# Loading work.alu(behave)
+# ** Warning: (vsim-3473) Component instance "mem_ram1 : mem_ram" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/dec File: C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/main_dec.vhd
+# Loading work.cmp_8bit(behavioral)
+force -freeze sim:/cpu/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/cpu/sw 01010101 0
+force -freeze sim:/cpu/instrucao 11010000 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/dec/alu1
+run
+run
+run
+force -freeze sim:/cpu/sw 11110000 0
+run
+run
+run
+run
+run
+run
+force -freeze sim:/cpu/instrucao 11100000 0
+run
+run
+run
+# End time: 12:12:17 on Dec 02,2024, Elapsed time: 0:15:39
+# Errors: 2, Warnings: 6

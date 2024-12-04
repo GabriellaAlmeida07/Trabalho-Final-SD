@@ -1,0 +1,46 @@
+C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/cmp_8bit.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/cmp_8bit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity cmp_8bit
+-- Compiling architecture Behavioral of cmp_8bit
+
+} {} {}} C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/alu.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/alu.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity alu
+-- Compiling architecture BEHAVE of alu
+
+} {} {}} C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/MemoriaRAM.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/MemoriaRAM.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MemoriaRAM
+-- Compiling architecture behavior of MemoriaRAM
+
+} {} {}} C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/cpu.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/cpu.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity cpu
+-- Compiling architecture BEHAVE of cpu
+
+} {} {}} C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/main_dec.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/15528121/Downloads/MemoriaRAM-20241202T133723Z-001/MemoriaRAM/main_dec.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity main_dec
+-- Compiling architecture BEHAVE of main_dec
+
+} {} {}}

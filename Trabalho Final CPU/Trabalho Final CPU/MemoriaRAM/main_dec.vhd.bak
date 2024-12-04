@@ -1,0 +1,245 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY main_dec IS -- controlador principal 
+    
+	 PORT (instrucao :               				IN STD_LOGIC_VECTOR (7 DOWNTO 0);
+			 reg_A,reg_B, reg_R, reg_PC, reg_IR:	BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0);
+			 zero, sign:									BUFFER STD_LOGIC);	
+
+END;
+
+ARCHITECTURE BEHAVE OF main_dec IS
+	
+	COMPONENT alu
+        PORT (
+            a, b :       IN STD_LOGIC_VECTOR(7 DOWNTO 0);      
+            alu_ctrl :   IN STD_LOGIC_VECTOR(2 DOWNTO 0);       
+            result :     BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0);   
+            zero :       OUT STD_LOGIC;                         
+				sign :		 OUT STD_LOGIC);
+	END COMPONENT;
+	
+	SIGNAL reg_A_signal, reg_B_signal, reg_R_signal: STD_LOGIC_VECTOR(7 DOWNTO 0);
+	SIGNAL ctrl : STD_LOGIC_VECTOR (2 DOWNTO 0);
+	
+BEGIN
+	
+	alu1: alu PORT MAP  (reg_A_signal, reg_B_signal, ctrl, reg_R_signal, zero, sign); 
+	
+	reg_R <= reg_R_signal;
+	
+	
+   PROCESS (instrucao) BEGIN
+       
+		 CASE instrucao (7 DOWNTO 4) IS
+			
+			WHEN "0000" =>  -- Add
+			
+			    ctrl <= "010"; 
+			
+				case instrucao (3 DOWNTO 0) IS 	
+					when "0000" => reg_A_signal <= reg_A;
+								      reg_B_signal <= reg_A;
+					
+					when "0001" => reg_A_signal <= reg_A;
+								      reg_B_signal <= reg_B;
+					
+					when "0010" =>	reg_A_signal <= reg_A;
+								      reg_B_signal <= reg_R;
+					
+					when "0011" =>	reg_A_signal <= reg_A;
+								      reg_B_signal <= reg_IR;
+					
+					when "0100" => reg_A_signal <= reg_B;
+								      reg_B_signal <= reg_A;
+					
+					when "0101" => reg_A_signal <= reg_B;
+								      reg_B_signal <= reg_B;
+					
+					when "0110" =>	reg_A_signal <= reg_B;
+								      reg_B_signal <= reg_R;
+					
+					when "0111" =>	reg_A_signal <= reg_B;
+								      reg_B_signal <= reg_IR;
+					
+					when "1000" => reg_A_signal <= reg_R;
+								      reg_B_signal <= reg_A;
+					
+					when "1001" => reg_A_signal <= reg_R;
+								      reg_B_signal <= reg_B;
+					
+					when "1010" =>	reg_A_signal <= reg_R;
+								      reg_B_signal <= reg_R;
+					
+					when "1011" => reg_A_signal <= reg_R;
+								      reg_B_signal <= reg_IR;
+					
+					when others => reg_A_signal <= "00000000";
+										reg_B_signal <= "00000000";
+					
+				END CASE;
+				
+			WHEN "0001" =>  -- SUB
+			
+					ctrl <= "110"; 
+					
+						case instrucao (3 DOWNTO 0) IS 	
+							when "0000" => reg_A_signal <= reg_A;
+												reg_B_signal <= reg_A;
+							
+							when "0001" => reg_A_signal <= reg_A;
+												reg_B_signal <= reg_B;
+							
+							when "0010" =>	reg_A_signal <= reg_A;
+												reg_B_signal <= reg_R;
+							
+							when "0011" =>	reg_A_signal <= reg_A;
+												reg_B_signal <= reg_IR;
+							
+							when "0100" => reg_A_signal <= reg_B;
+												reg_B_signal <= reg_A;
+							
+							when "0101" => reg_A_signal <= reg_B;
+												reg_B_signal <= reg_B;
+							
+							when "0110" =>	reg_A_signal <= reg_B;
+												reg_B_signal <= reg_R;
+							
+							when "0111" =>	reg_A_signal <= reg_B;
+												reg_B_signal <= reg_IR;
+							
+							when "1000" => reg_A_signal <= reg_R;
+												reg_B_signal <= reg_A;
+							
+							when "1001" => reg_A_signal <= reg_R;
+												reg_B_signal <= reg_B;
+							
+							when "1010" =>	reg_A_signal <= reg_R;
+												reg_B_signal <= reg_R;
+							
+							when "1011" => reg_A_signal <= reg_R;
+												reg_B_signal <= reg_IR;
+												
+							when others => reg_A_signal <= "00000000";
+												reg_B_signal <= "00000000";
+						END CASE;
+						
+			
+			WHEN "0010" =>  -- AND
+			
+				ctrl <= "000"; 
+			
+				case instrucao (3 DOWNTO 0) IS 	
+					when "0000" => reg_A_signal <= reg_A;
+								      reg_B_signal <= reg_A;
+					
+					when "0001" => reg_A_signal <= reg_A;
+								      reg_B_signal <= reg_B;
+					
+					when "0010" =>	reg_A_signal <= reg_A;
+								      reg_B_signal <= reg_R;
+					
+					when "0011" =>	reg_A_signal <= reg_A;
+								      reg_B_signal <= reg_IR;
+					
+					when "0100" => reg_A_signal <= reg_B;
+								      reg_B_signal <= reg_A;
+					
+					when "0101" => reg_A_signal <= reg_B;
+								      reg_B_signal <= reg_B;
+					
+					when "0110" =>	reg_A_signal <= reg_B;
+								      reg_B_signal <= reg_R;
+					
+					when "0111" =>	reg_A_signal <= reg_B;
+								      reg_B_signal <= reg_IR;
+					
+					when "1000" => reg_A_signal <= reg_R;
+								      reg_B_signal <= reg_A;
+					
+					when "1001" => reg_A_signal <= reg_R;
+								      reg_B_signal <= reg_B;
+					
+					when "1010" =>	reg_A_signal <= reg_R;
+								      reg_B_signal <= reg_R;
+					
+					when "1011" => reg_A_signal <= reg_R;
+								      reg_B_signal <= reg_IR;
+										
+					when others => reg_A_signal <= "00000000";
+										reg_B_signal <= "00000000";
+										
+				END CASE;
+				
+			
+			WHEN "0011" =>  -- Branch if equal (check)
+			
+				ctrl <= "001"; 
+			
+				case instrucao (3 DOWNTO 0) IS 	
+					when "0000" => reg_A_signal <= reg_A;
+								      reg_B_signal <= reg_A;
+					
+					when "0001" => reg_A_signal <= reg_A;
+								      reg_B_signal <= reg_B;
+					
+					when "0010" =>	reg_A_signal <= reg_A;
+								      reg_B_signal <= reg_R;
+					
+					when "0011" =>	reg_A_signal <= reg_A;
+								      reg_B_signal <= reg_IR;
+					
+					when "0100" => reg_A_signal <= reg_B;
+								      reg_B_signal <= reg_A;
+					
+					when "0101" => reg_A_signal <= reg_B;
+								      reg_B_signal <= reg_B;
+					
+					when "0110" =>	reg_A_signal <= reg_B;
+								      reg_B_signal <= reg_R;
+					
+					when "0111" =>	reg_A_signal <= reg_B;
+								      reg_B_signal <= reg_IR;
+					
+					when "1000" => reg_A_signal <= reg_R;
+								      reg_B_signal <= reg_A;
+					
+					when "1001" => reg_A_signal <= reg_R;
+								      reg_B_signal <= reg_B;
+					
+					when "1010" =>	reg_A_signal <= reg_R;
+								      reg_B_signal <= reg_R;
+					
+					when "1011" => reg_A_signal <= reg_R;
+								      reg_B_signal <= reg_IR;
+										
+					when others => reg_A_signal <= "00000000";
+										reg_B_signal <= "00000000";
+				END CASE;
+			
+			WHEN "0100" =>  -- ADDI (check)
+			
+				ctrl <= "111"; 
+			
+				case instrucao (3 DOWNTO 0) IS 	
+					when "0000" => reg_A_signal <= reg_A;
+					
+					when "0001" => reg_A_signal <= reg_B;
+					
+					when "0010" =>	reg_A_signal <= reg_R;
+					
+					when "0011" =>	reg_A_signal <= reg_IR;
+					
+					when others => reg_A_signal <= "00000000";
+										reg_B_signal <= "00000000";
+										
+				END CASE;
+			
+			when others => ctrl <= "011";
+
+		 END CASE;
+   
+	END PROCESS;
+	
+END;

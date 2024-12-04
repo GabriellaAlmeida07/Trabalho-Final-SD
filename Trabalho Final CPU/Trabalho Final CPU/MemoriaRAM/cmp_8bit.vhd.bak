@@ -1,0 +1,33 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+-- Declaração da entidade do comparador
+ENTITY cmp_8bit IS
+    PORT (
+        n1 : IN STD_LOGIC_VECTOR(7 DOWNTO 0);  -- Primeiro número de entrada
+        n2 : IN STD_LOGIC_VECTOR(7 DOWNTO 0);  -- Segundo número de entrada
+        greater : OUT STD_LOGIC;                -- Sinal: num1 é maior que num2
+        less : OUT STD_LOGIC                    -- Sinal: num1 é menor que num2
+    );
+END ENTITY cmp_8bit;
+
+-- Implementação do comparador
+ARCHITECTURE Behavioral OF comparator_8bit IS
+BEGIN
+    PROCESS (n1, n2)
+    BEGIN
+        
+		  IF n1 = n2 THEN
+            greater <= '0';
+            less <= '0';        
+		  
+			ELSIF n1 < n2 THEN
+            greater <= '0';
+            less <= '1';
+        ELSE
+            greater <= '1';
+            less <= '0';
+        END IF;
+    END PROCESS;
+END ARCHITECTURE Behavioral;
